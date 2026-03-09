@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bestwears - Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+<h1>Bestwears</h1>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Products</a></li>
+<li><a href="info.html">About Us</a></li>
+<li><a href="cart.html">Cart</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="shop-controls">
+
+<div class="search-bar">
+<input type="text" id="searchInput" placeholder="Search products...">
+<button id="searchButton">Search</button>
+</div>
+
+<div class="filters">
+
+<div>
+<label>Category</label>
+<select id="category">
+<option value="">All</option>
+<option value="shirts">Shirts</option>
+<option value="pants">Pants</option>
+<option value="shoes">Shoes</option>
+<option value="accessories">Accessories</option>
+</select>
+</div>
+
+<div>
+<label>Gender</label>
+<select id="gender">
+<option value="">All</option>
+<option value="men">Men</option>
+<option value="women">Women</option>
+<option value="unisex">Unisex</option>
+</select>
+</div>
+
+<div>
+<label>Min Price</label>
+<input type="number" id="priceMin" placeholder="0">
+</div>
+
+<div>
+<label>Max Price</label>
+<input type="number" id="priceMax" placeholder="1000">
+</div>
+
+<div class="color-filter">
+<label>Colors</label>
+
+<label><input type="checkbox" value="red"> Red</label>
+<label><input type="checkbox" value="blue"> Blue</label>
+<label><input type="checkbox" value="green"> Green</label>
+<label><input type="checkbox" value="black"> Black</label>
+<label><input type="checkbox" value="white"> White</label>
+
+</div>
+
+</div>
+</section>
+
+<section class="products" id="productList">
+<!-- products rendered with JS -->
+</section>
+
+<footer class="footer">
+<p>© 2026 Bestwears. All rights reserved.</p>
+</footer>
+
+<script src="products.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

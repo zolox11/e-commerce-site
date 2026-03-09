@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bestwears - Cart</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+<h1>Bestwears</h1>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Products</a></li>
+<li><a href="info.html">About Us</a></li>
+<li><a href="cart.html">Cart</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="cart">
+
+<h2>Your Cart</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>Product</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Total</th>
+<th>Remove</th>
+</tr>
+</thead>
+
+<tbody id="cartItems">
+</tbody>
+
+</table>
+
+<div class="cart-summary">
+<p>Total: $<span id="cartTotal">0.00</span></p>
+
+<a href="checkout.html">
+<button class="checkout-btn">Proceed to Checkout</button>
+</a>
+
+</div>
+
+</section>
+
+<footer class="footer">
+<p>© 2026 Bestwears. All rights reserved.</p>
+</footer>
+
+<script src="products.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

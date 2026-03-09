@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bestwears - Checkout</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+<h1>Bestwears</h1>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Products</a></li>
+<li><a href="info.html">About Us</a></li>
+<li><a href="cart.html">Cart</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="products-pricing">
+
+<h2>Order Summary</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>Product</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Total</th>
+</tr>
+</thead>
+
+<tbody id="orderSummary">
+</tbody>
+
+</table>
+
+<p class="order-total">
+Total: $<span id="orderTotal">0.00</span>
+</p>
+
+</section>
+
+<section class="entry-fields">
+
+<h2>Checkout</h2>
+
+<form id="checkoutForm">
+
+<label>Full Name</label>
+<input type="text" required>
+
+<label>Email</label>
+<input type="email" required>
+
+<label>Shipping Address</label>
+<textarea required></textarea>
+
+<label>Payment Method</label>
+<select required>
+
+<option value="">Select Payment</option>
+<option>Credit Card</option>
+<option>PayPal</option>
+<option>Bank Transfer</option>
+
+</select>
+
+<button type="submit" class="place-order-btn">
+Place Order
+</button>
+
+</form>
+
+</section>
+
+<footer class="footer">
+<p>© 2026 Bestwears. All rights reserved.</p>
+</footer>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
